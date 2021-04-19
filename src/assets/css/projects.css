@@ -1,0 +1,41 @@
+.project-container{
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+
+.project-title {
+  text-align: left;
+  color: var(--DarkGrey);
+  padding-bottom: 3rem;
+}
+
+.project-container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  background-color: var(--DarkGrey);
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 1px 5px 5px black;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+@media only screen and (max-width: 680px) {
+  #infinite-carousel {
+    width: 80% !important;
+  }
+  .project-title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .project-title {
+    text-align: center;
+  }
+}

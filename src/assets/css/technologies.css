@@ -1,0 +1,161 @@
+.technologies-container{
+padding-top:  4rem;
+padding-bottom:  7rem;
+
+}
+
+.technologies-cards {
+  padding-top: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.technologies-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  color: var(--LightGrey);
+}
+
+.technologies-cards {
+  width: 80% !important;
+}
+.card-expandable {
+
+  font-family: "Prototype", cursive;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0.5rem;
+  border-radius: 10px;
+  width: 280px;
+  height: 140px;
+  background: linear-gradient(to bottom, #e2e2e2, #d4d4d4);
+  color: var(--DarkGrey);
+  transition: all 300ms ease-in-out;
+}
+
+div.expand {
+  height: 200px !important;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.card-expandable p {
+  opacity: 1;
+}
+
+.upper {
+  transition: all 300ms ease-in-out;
+
+  font-size: xx-large;
+  height: 140px;
+  width: 100%;
+  padding-top: 16%;
+  background: linear-gradient(to right bottom, #fafafa, #ececec);
+}
+
+.upper h3 svg {
+  height: 16px;
+  width: 16px;
+  fill: var(--DarkGrey);
+  position: relative;
+  left: 7.5rem;
+  bottom: 1rem;
+}
+
+.lower {
+  padding: 20px;
+}
+
+.lower p:not(:first-child) {
+  margin-top: 20px;
+}
+
+.InfiniteCarouselSlide{
+  float: none !important;
+}
+@media only screen and (max-width: 677px) {
+  .card-expandable {
+    width: 210px !important;
+    height: 100px !important;
+  }
+  .upper {
+    font-size: large !important;
+    height: auto !important;
+
+  }
+  .technologies-title {
+    text-align: left !important;
+
+    color: var(--LightGrey);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .card-expandable {
+    width: 210px !important;
+    height: 120px !important;
+  }
+  div.expand {
+    height: 180px !important;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  .upper {
+    font-size: x-large !important;
+    height: 120px !important;
+    position: relative;
+    padding-top: 20%;
+  }
+  .technologies-title {
+    font-size: 3rem !important;
+  }
+  .upper h3 svg {
+    height: 16px;
+    width: 16px;
+    fill: var(--DarkGrey);
+    position: inherit;
+    position: absolute;
+
+    bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 602px) {
+  .technologies-cards {
+    width: 100% !important;
+  }
+  div.expand {
+    height: 160px !important;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  .card-expandable {
+    width: 160px !important;
+    height: 100px !important;
+  }
+  .upper {
+    font-size: 1.2rem !important;
+    height: 100px !important;
+  }
+  .technologies-title {
+    font-size: 3rem !important;
+    padding-left: 1rem;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .technologies-title {
+    text-align: center !important;
+    padding-left: 0rem;
+  }
+}
+
+
+.TechnologyListItem{
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  
+}

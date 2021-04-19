@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Prototype";
+  src: url("assets/font/Prototype.ttf");
+  
+}
+
+
+
+h1,h2,h3,h4{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0rem;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+:root {
+  --DarkGrey: #50575d;
+  --LightGrey: rgba(244, 244, 244);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+
+.Dark_Bg {
+  background: linear-gradient(to right, #3f474e, #41494f);
+  color: var(--LightGrey);
+  width: 100%;
+  height: max-content;
+  
+}
+
+.Light_Bg {
+  background-color: var(--LightGrey);
+  color: var(--DarkGrey);
+  width: 100%;
+  height: max-content;
+  overflow-x: hidden;
+}
+
+
+.react-loading{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  #50575d;
+}

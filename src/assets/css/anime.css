@@ -1,0 +1,163 @@
+#anime-section-title{
+  padding-top: 1.5rem;
+
+  font-family: "Prototype";
+  padding-bottom: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#anime-section-title *{
+    font-size: 3rem;
+}
+#anime-section-title h2{
+    font-size: 1.5rem;
+    width: 90%;
+}
+
+.anime-container {
+    display: grid !important;
+    justify-content: center;
+    align-content: center;
+    height: fit-content;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+  }
+  #GTA{
+    width: fit-content;
+    margin-bottom: 0.5rem;
+  }
+  .anime-card {
+    background: linear-gradient(to right, #31373d, #353b40);
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+#btnStat{
+  padding-top: 1rem;
+  margin-bottom: -1rem;
+}
+  #anime-container-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+  }
+  #anime-container-inner>*{
+    margin: 0.5rem;
+  }
+  #webs{
+      display: none;
+  }
+
+  #found{
+    appearance: menulist-button;
+    background-color: rgb(255, 255, 255) !important;
+  }
+  #found:focus{
+    appearance: menulist-button;
+    background-color: rgb(232, 240, 254) !important;
+  }
+
+  #resolution{
+    appearance: menulist-button;
+    background-color: rgb(232, 240, 254) !important;
+  }
+
+
+  #anime-section-find{
+    width: 61%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background:#212529;
+    height: fit-content;
+    align-self: center;
+    padding: 1rem;
+
+  }
+
+  #anime-section-find>div{
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  #anime-section-find>div>*{
+    max-width: 15rem;
+    margin: 0.5rem auto;
+  }
+
+  #anime-section-find>div>h2 {
+    font-size: 1.4rem;
+}
+
+  #anime-section-download{
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#212529;
+    padding: 1rem;
+    height: fit-content;
+  }
+
+  #anime-section-download>div{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  #anime-section-download>div>h2{
+    text-align: center;
+   font-size: 1.4rem;
+  }
+
+  #anime-section-download>div>*:nth-child(8){
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+  @media only screen and (max-width: 992px) {
+    #anime-section-download{
+      width: 50%;
+    }
+    #anime-section-find{
+      width: 80%;
+    }
+    #anime-section-find>div{
+      width: 70%;
+    }
+
+  }
+
+  @media only screen and (max-width: 640px) {
+    #anime-section-download{
+      width: 80%;
+    }
+  .anime-card {
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+  }
+  #anime-section-find>div{
+    width: 80%;
+  }
+  #anime-section-title{
+    padding-top: 3rem;
+  }
+  .anime-container {
+    padding-bottom: 2rem;
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "homepage": ".",
+  "name": "btawaifi-main",
+  "version": "1.0.2",
+  "private": false,
+  "dependencies": {
+    "@emotion/react": "^11.1.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "axios": "^0.21.1",
+    "framer-motion": "^3.2.0",
+    "intersection-observer": "^0.12.0",
+    "magic-hover": "^1.0.5",
+    "react": "^17.0.1",
+    "react-awesome-reveal": "^3.5.2",
+    "react-bnb-gallery": "^1.4.4",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^17.0.1",
+    "react-ga": "^3.3.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^1.0.7",
+    "react-intersection-observer": "^8.31.0",
+    "react-loading": "^2.0.3",
+    "react-responsive-mixin": "^0.4.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-slick": "^0.27.13",
+    "uniqid": "^5.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages -b ghpages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
