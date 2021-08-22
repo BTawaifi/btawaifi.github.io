@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.099626bd.chunk.css",
-    "main.js": "./static/js/main.eba806a2.chunk.js",
-    "main.js.map": "./static/js/main.eba806a2.chunk.js.map",
+    "main.js": "./static/js/main.9a09490c.chunk.js",
+    "main.js.map": "./static/js/main.9a09490c.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.79386756.js",
     "runtime-main.js.map": "./static/js/runtime-main.79386756.js.map",
     "static/css/2.3640ec5e.chunk.css": "./static/css/2.3640ec5e.chunk.css",
@@ -39,7 +39,7 @@
     "static/media/Photoshop.webp": "./static/media/Photoshop.223738f7.webp",
     "static/media/Premiere.webp": "./static/media/Premiere.5117d71c.webp",
     "static/media/index.css": "./static/media/Prototype.be9924a4.ttf",
-    "static/media/Resume-Boutros-Tawaifi.pdf": "./static/media/Resume-Boutros-Tawaifi.6e4a3255.pdf",
+    "static/media/Resume-Boutros-Tawaifi.pdf": "./static/media/Resume-Boutros-Tawaifi.4c1bfca3.pdf",
     "static/media/Sanity.webp": "./static/media/Sanity.e561ddd8.webp",
     "static/media/Socket.webp": "./static/media/Socket.2e05469a.webp",
     "static/media/Strapi.webp": "./static/media/Strapi.3ffff518.webp",
@@ -84,6 +84,6 @@
     "static/css/2.3640ec5e.chunk.css",
     "static/js/2.1e3b39a2.chunk.js",
     "static/css/main.099626bd.chunk.css",
-    "static/js/main.eba806a2.chunk.js"
+    "static/js/main.9a09490c.chunk.js"
   ]
 }
