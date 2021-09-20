@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "./static/css/main.099626bd.chunk.css",
-    "main.js": "./static/js/main.9a09490c.chunk.js",
-    "main.js.map": "./static/js/main.9a09490c.chunk.js.map",
+    "main.js": "./static/js/main.e0fca044.chunk.js",
+    "main.js.map": "./static/js/main.e0fca044.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.79386756.js",
     "runtime-main.js.map": "./static/js/runtime-main.79386756.js.map",
     "static/css/2.3640ec5e.chunk.css": "./static/css/2.3640ec5e.chunk.css",
-    "static/js/2.1e3b39a2.chunk.js": "./static/js/2.1e3b39a2.chunk.js",
-    "static/js/2.1e3b39a2.chunk.js.map": "./static/js/2.1e3b39a2.chunk.js.map",
+    "static/js/2.d16425b7.chunk.js": "./static/js/2.d16425b7.chunk.js",
+    "static/js/2.d16425b7.chunk.js.map": "./static/js/2.d16425b7.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.3640ec5e.chunk.css.map": "./static/css/2.3640ec5e.chunk.css.map",
     "static/css/main.099626bd.chunk.css.map": "./static/css/main.099626bd.chunk.css.map",
-    "static/js/2.1e3b39a2.chunk.js.LICENSE.txt": "./static/js/2.1e3b39a2.chunk.js.LICENSE.txt",
+    "static/js/2.d16425b7.chunk.js.LICENSE.txt": "./static/js/2.d16425b7.chunk.js.LICENSE.txt",
     "static/media/21185-logo-1541431220.webp": "./static/media/21185-logo-1541431220.b6a859f5.webp",
     "static/media/3Dmax.webp": "./static/media/3Dmax.cf6588cf.webp",
     "static/media/800px-Bootstrap_logo.svg.webp": "./static/media/800px-Bootstrap_logo.svg.0c6261db.webp",
@@ -61,6 +61,7 @@
     "static/media/iphone_Shot.webp": "./static/media/iphone_Shot.1d4cbb66.webp",
     "static/media/java_logo_640.1419968352.webp": "./static/media/java_logo_640.1419968352.3c8edc6b.webp",
     "static/media/jquery+icon-1320185152994214115.webp": "./static/media/jquery+icon-1320185152994214115.820657e1.webp",
+    "static/media/lepont.webp": "./static/media/lepont.f1adae26.webp",
     "static/media/logo-2582747_1280.webp": "./static/media/logo-2582747_1280.8bc4441c.webp",
     "static/media/logo-2582748_640.webp": "./static/media/logo-2582748_640.c7722e15.webp",
     "static/media/logo-node.webp": "./static/media/logo-node.028ff552.webp",
@@ -76,14 +77,16 @@
     "static/media/screaming-frog-logo-kg.webp": "./static/media/screaming-frog-logo-kg.dbd93968.webp",
     "static/media/seal-color-aef0354c.webp": "./static/media/seal-color-aef0354c.b44ea7cf.webp",
     "static/media/solidworks-114573eb04.webp": "./static/media/solidworks-114573eb04.2e1167e3.webp",
+    "static/media/thelasttemptation.webp": "./static/media/thelasttemptation.26c6cc10.webp",
+    "static/media/trellotodo.webp": "./static/media/trellotodo.1895edba.webp",
     "static/media/unity.webp": "./static/media/unity.ace5a145.webp",
     "static/media/vhdl.webp": "./static/media/vhdl.aa56e011.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.79386756.js",
     "static/css/2.3640ec5e.chunk.css",
-    "static/js/2.1e3b39a2.chunk.js",
+    "static/js/2.d16425b7.chunk.js",
     "static/css/main.099626bd.chunk.css",
-    "static/js/main.9a09490c.chunk.js"
+    "static/js/main.e0fca044.chunk.js"
   ]
 }
