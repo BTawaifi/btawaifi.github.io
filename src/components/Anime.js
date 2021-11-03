@@ -10,13 +10,13 @@ const Anime = () => {
   const [animeName, useanimeName] = useState("");
   const [maxEpisode, usemaxEpisode] = useState(1);
 
-  useEffect(() => {
+  useEffect((maxEpisode) => {
     useanimeUrl(localStorage.getItem("storage_animeUrl"));
     useanimeName(localStorage.getItem("selectedAnime"));
     usemaxEpisode(localStorage.getItem("storage_maxEpisode"));
     usecurrentEpisode(localStorage.getItem("currentEp"));
 
-    if (maxEpisode == undefined) {
+    if (maxEpisode === undefined) {
       initializeLoader();
     }
     return () => {};
@@ -73,7 +73,7 @@ const Anime = () => {
     mhref = mhref.concat(href);
     useanimeUrl(mhref);
     mhref = mhref.concat(`-episode-1`);
-    if (mhref.indexOf("/category/" != -1)) {
+    if (mhref.indexOf("/category/" !== -1)) {
       mhref = mhref.replace("/category/", "/");
       useanimeUrl(mhref);
     }
@@ -195,7 +195,7 @@ const Anime = () => {
     usecurrentEpisode(1);
   }
   function AddIframe() {
-    let htmlC = `<iframe class='iframe' scrolling="no" src="" style="border: 0px none;  height: 890px; margin-top: -570px; width: 100%;"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    let htmlC = `<iframe class='iframe' scrolling="no" src="" style="border: 0px none;  height: 600px; margin-top: -270px; width: 100%;"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     ref_ifContainer.current.innerHTML = htmlC;
   }
 
@@ -219,10 +219,10 @@ const Anime = () => {
   }
 
   function parseURL(Url) {
-    if (Url.indexOf("/category/" != -1)) {
+    if (Url.indexOf("/category/" !== -1)) {
       Url = Url.replace("/category/", "/");
     }
-    if (Url.indexOf("-episode") != -1) {
+    if (Url.indexOf("-episode") !== -1) {
       let del = Url.indexOf("-episode");
       Url = Url.slice(0, del);
       useanimeUrl(Url);
@@ -242,14 +242,16 @@ const Anime = () => {
     let errr = document.querySelector("#webs");
 
     axios
-      .get(`https://corsgogo.herokuapp.com/${link}`)
+    //.get(`https://corsgogo.herokuapp.com/${link}`)
+      .get(`${link}`)
       .then((html) => {
         errr.style.color = "white";
         var parser = new DOMParser();
         var doc = parser.parseFromString(html.data, "text/html");
         let URL = doc.querySelector(".dowloads").firstChild.href;
         BtnStatus.innerText = "Response Granted";
-        processResponse(URL);
+        window.open(URL, '_blank');
+        //processResponse(URL);
       })
       .catch(() => {
         BtnStatus.style.color = "red";
@@ -257,72 +259,81 @@ const Anime = () => {
       });
   }
 
-  function processResponse(link) {
-    let BtnStatus = ref_btnStat.current;
-    const resolution = ref_resolution.current.value;
-    BtnStatus.innerText = "Processing Download";
-    if (resolution != 0) {
-      axios
-        .get(`https://corsgogo.herokuapp.com/${link}`)
-        .then((html) => {
-          var parser = new DOMParser();
-          var doc = parser.parseFromString(html.data, "text/html");
-          //Choosing Resolution from scraped webpage
-          let Url3 = "";
-          if (resolution == 1) {
-            Url3 = doc.body
-              .querySelector(".content")
-              .querySelector(".content_c")
-              .querySelector(".content_c_bg").children[4].children[3]
-              .children[0].href;
-          } else if (resolution == 2) {
-            Url3 = doc.body
-              .querySelector(".content")
-              .querySelector(".content_c")
-              .querySelector(".content_c_bg").children[6].children[1]
-              .children[0].href;
-            // document.querySelector('.iframe').src = Url3;
-            window.open(Url3, "_blank");
-          } else if (resolution == 3) {
-            Url3 = doc.body
-              .querySelector(".content")
-              .querySelector(".content_c")
-              .querySelector(".content_c_bg").children[4].children[4]
-              .children[0].href;
-          } else if (resolution == 4) {
-            Url3 = doc.body
-              .querySelector(".content")
-              .querySelector(".content_c")
-              .querySelector(".content_c_bg").children[4].children[5]
-              .children[0].href;
-          } else if (resolution == 5) {
-            Url3 = doc.body
-              .querySelector(".content")
-              .querySelector(".content_c")
-              .querySelector(".content_c_bg").children[4].children[2]
-              .children[0].href;
-          }
-          BtnStatus.innerText = "Done";
-          BtnStatus.style.color = "green";
-          // window.open(Url3, '_blank');
-          if (resolution != 2) {
-            downloadFile(Url3);
-          }
-        })
-        .catch(() => {
-          BtnStatus.style.color = "red";
-          ref_btnStat.current.innerText =
-            "Error Retry/Change Resolution Number/Choose External Link";
-        });
-    }
-  }
+  // function processResponse(link) {
+  //   let BtnStatus = ref_btnStat.current;
+  //   const resolution = ref_resolution.current.value;
+  //   BtnStatus.innerText = "Processing Download";
+  //   if (resolution !== 0) {
+  //     axios
+  //     //.get(`https://corsgogo.herokuapp.com/${link}`)
+  //       .get(`${link}`)
+  //       .then((html) => {
+  //         var parser = new DOMParser();
+  //         var doc = parser.parseFromString(html.data, "text/html");
+  //         //Choosing Resolution from scraped webpage
+  //         let Url3 = "";
 
-  function downloadFile(filePath) {
-    var link = document.createElement("a");
-    link.href = filePath;
-    link.download = filePath.substr(filePath.lastIndexOf("/") + 1);
-    link.click();
-  }
+  //         if(resolution===2){
+  //           console.log(Url3)
+  //           Url3 = doc.body.querySelector(".dowloads").children[0].href;
+  //         }
+  //         /*
+  //         if (resolution == 1) {
+  //           Url3 = doc.body
+  //             .querySelector(".content")
+  //             .querySelector(".content_c")
+  //             .querySelector(".content_c_bg").children[4].children[3]
+  //             .children[0].href;
+  //         } else if (resolution == 2) {
+  //           Url3 = doc.body
+  //             .querySelector(".content")
+  //             .querySelector(".content_c")
+  //             .querySelector(".content_c_bg").children[6].children[1]
+  //             .children[0].href;
+  //           // document.querySelector('.iframe').src = Url3;
+  //           window.open(Url3, "_blank");
+  //         } else if (resolution == 3) {
+  //           Url3 = doc.body
+  //             .querySelector(".content")
+  //             .querySelector(".content_c")
+  //             .querySelector(".content_c_bg").children[4].children[4]
+  //             .children[0].href;
+  //         } else if (resolution == 4) {
+  //           Url3 = doc.body
+  //             .querySelector(".content")
+  //             .querySelector(".content_c")
+  //             .querySelector(".content_c_bg").children[4].children[5]
+  //             .children[0].href;
+  //         } else if (resolution == 5) {
+  //           Url3 = doc.body
+  //             .querySelector(".content")
+  //             .querySelector(".content_c")
+  //             .querySelector(".content_c_bg").children[4].children[2]
+  //             .children[0].href;
+  //         }
+
+  //         */
+  //         BtnStatus.innerText = "Done";
+  //         BtnStatus.style.color = "green";
+  //         window.open(Url3, '_blank');
+  //         /*if (resolution != 2) {
+  //           downloadFile(Url3);
+  //         }*/
+  //       })
+  //       .catch(() => {
+  //         BtnStatus.style.color = "red";
+  //         ref_btnStat.current.innerText =
+  //           "Error Retry/Change Resolution Number/Choose External Link";
+  //       });
+  //   }
+  // }
+
+  // function downloadFile(filePath) {
+  //   var link = document.createElement("a");
+  //   link.href = filePath;
+  //   link.download = filePath.substr(filePath.lastIndexOf("/") + 1);
+  //   link.click();
+  // }
 
   /////////////////////////
   return (
@@ -373,7 +384,7 @@ const Anime = () => {
             <img
               ref={ref_animePic}
               id="animePic"
-              src={require("../assets/img/anime.jpg").default}
+              src={require("../assets/img/anime.webp").default}
               width="200px"
               height="282px"
               alt="Anime pic"
@@ -419,19 +430,19 @@ const Anime = () => {
               <div style={{ textAlign: "right", paddingRight: "1rem" }}>
                 Max Episodes: <span id="mx-ep">{maxEpisode}</span>
               </div>
-              <label className="mt-2" htmlFor="resolution">
+              <label hidden={true} className="mt-2" htmlFor="resolution">
                 Resolution:
               </label>
-              <select
+              <select hidden={true}
                 className="form-control"
                 id="resolution"
                 ref={ref_resolution}
               >
                 <option value="2">External Link</option>
-                <option value="1">First Internal</option>
+               {/* <option value="1">First Internal</option>
                 <option value="3">Second Internal</option>
                 <option value="4">Third Internal</option>
-                <option value="5">Extra(LOW) Internal</option>
+                <option value="5">Extra(LOW) Internal</option>*/}
               </select>
 
               <div className="mt-2">

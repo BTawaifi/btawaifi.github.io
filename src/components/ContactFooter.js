@@ -87,7 +87,7 @@ const ContactFooter = () => {
             <FontAwesomeIcon icon={faGithub} size="2x" fixedWidth />
           </a>
         </motion.div>
-        <motion.div whileHover={{scale:1.05,transition:{yoyo:Infinity}}} className="mb-3">
+         {/*<motion.div whileHover={{scale:1.05,transition:{yoyo:Infinity}}} className="mb-3">
           <a
             className="contact-text-icons"
             href="https://www.linkedin.com/in/boutros-tawaifi"
@@ -95,7 +95,7 @@ const ContactFooter = () => {
             <FontAwesomeIcon icon={faLinkedin} size="2x" fixedWidth />
           </a>
         </motion.div>
-        {/*<motion.div whileHover={{scale:1.05,transition:{yoyo:Infinity}}} className="mb-3">
+       <motion.div whileHover={{scale:1.05,transition:{yoyo:Infinity}}} className="mb-3">
           <a
             className="contact-text-icons"
             href="https://www.youtube.com/channel/"

@@ -1,6 +1,28 @@
-# Btawaifi portfolio website
+# BTawaifi Portfolio
 
-* Checkout the website at:
-https://btawaifi.github.io/
+### Check out The Website at
 
-## This Branch contains the assets and source components
+https://btawaifi.github.io
+
+## Technologies used to code the website and projects
+
+- HTML5
+- Vanilla.js
+- Bootstrap
+- CSS
+- Node.js
+- React
+- Express.js
+- Socket.io
+- Webpack
+
+## Technologies used for design
+
+- Photoshop
+- Illustrator
+- Figma
+
+## SEO analysis
+
+- Google search console
+- Screaming Frog SEO Spider

@@ -25,7 +25,7 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { Helmet } from "react-helmet-async"; //usage requires HelmetProvider component
 import ReactLoading from "react-loading";
-import './index.css';
+import "./index.css";
 
 function App() {
   const myRef1 = useRef(null);
@@ -104,28 +104,34 @@ function Home(props) {
   return (
     <div>
       <Helmet>
-        <title>Boutros Tawaifi's Online Portfolio Projects And Designs</title>
+        <title>
+          Boutros Tawaifi Portfolio | Full-Stack Developer | Designer
+        </title>
         {/*<link rel="canonical" href="http://mysite.com/example" />*/}
 
         <meta
           name="description"
-          content="Boutros Tawaifi's Online Portfolio Projects And Designs, Watch Anime With BTanime, See Designs"
+          content="Full-Stack React And NodeJs Express developer, Logo, Branding, Design And Computer Engineering | BTAnime | BTChatting | Boutros Tawaifi"
         />
         <meta
           name="keywords"
-          content="Boutros Tawaifi's Online Portfolio Projects And Designs, Boutros Tawaifi ,Boutrous Tawaifi ,Btawaifi, BTanime, PetrossonBygg"
+          content="Boutros Tawaifi, Botros Tawaifi, Btawaifi, Boutrous Tawaifi, Botrous Tawaifi"
         />
 
         <meta name="author" content="Boutros Tawaifi" />
+        <meta property="og:url" content="https://btawaifi.github.io/" />
+        <meta property="og:type" content="website" />
         <meta
-          name="title"
           property="og:title"
-          content="Boutros Tawaifi's Online Portfolio Projects And Designs"
+          content="Boutros Tawaifi Portfolio | Full-Stack Developer | Designer"
         />
         <meta
-          name="image"
+          property="og:description"
+          content="Full-Stack React And NodeJs Express developer, Logo, Branding, Design And Computer Engineering | BTAnime | BTChatting | Boutros Tawaifi"
+        />
+        <meta
           property="og:image"
-          content="./assets/img/Logo.png"
+          content="https://lh3.googleusercontent.com/a-/AOh14GgO5XO-e6FAcTMKUrm4YE8YV1sheOtbAyLZe6jOVg=s288-p-no"
         />
       </Helmet>
 

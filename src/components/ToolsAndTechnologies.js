@@ -5,12 +5,13 @@ import { Fade,ExpandableCard } from "../ImportExport";
 const TechnologyListFE = [
   "HTML5",
   "CSS",
-  "SASS",
   "JavaScript",
   "React.js",
+  "SASS",
   "jQuery",
   "Bootstrap",
   "Progressive Web Apps (PWA)",
+  "Wordpress",
 ];
 const TechnologyListBE = [
   "Node.js",

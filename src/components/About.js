@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Container, Row, Col, Nav, Card, Image } from "react-bootstrap";
-import Avatar from "../assets/img/BT.jpg";
+import Avatar from "../assets/img/BT.webp";
 import MagicHover from "magic-hover";
 
 const About = () => {
@@ -28,17 +28,18 @@ const About = () => {
                     <h3 className="pl-0">
                       I’m a
                       <span className="about-span-weight">
-                        &nbsp;Programmer / Instructor / Designer and IT Expert.
+                        &nbsp;Full Stack Engineer / Instructor / Designer.
                       </span>
                       <br />I work with Technologies including
                       <span className="about-span-weight">
-                        &nbsp;React, Nodejs, Adobe, Autodesk Products.
+                        &nbsp;React, Nodejs, Adobe,
                       </span>
+                      <br />and <span className="about-span-weight">Autodesk Products.</span>
                     </h3>
                   </div>
 
                   <h3>
-                    I'm Always
+                    I'm very
                     <span className="about-span-weight"> Passionate</span> and
                     <span className="about-span-weight"> Success Driven</span>.
                     <br />
@@ -50,12 +51,12 @@ const About = () => {
                     </span>
                     &nbsp;and
                     <span className="about-span-weight">&nbsp;Circuit Design.</span>
-                    <br />
+                    {/*<br />
                     I'm Currently Finishing My
                     <span className="about-span-weight">
                     &nbsp;Computer Engineering Degree
                     </span>
-                    &nbsp;At Aleppo State University
+                    &nbsp;At Aleppo State University*/}
                   </h3>
                 </Card.Body>
               </Col>
