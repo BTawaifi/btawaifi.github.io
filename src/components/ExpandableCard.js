@@ -14,13 +14,9 @@ class ExpandableCard extends React.Component {
       // e.target.classList.contains("clickable-upper") || e.target.classList.contains("bi-caret-down-fill")|| e.target.classList.contains("bi-caret-up-fill")
     ) {
       if (this.state.open) {
-        this.setState({
-          open: false,
-        });
+        this.setState({ open: false, });
       } else {
-        this.setState({
-          open: true,
-        });
+        this.setState({ open: true, });
       }
     }
   };

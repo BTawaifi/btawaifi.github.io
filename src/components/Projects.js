@@ -1,10 +1,10 @@
-import { Container, Button, Card } from "react-bootstrap";
-import MagicHover from "magic-hover";
-import { InfiniteCarousel, Fade } from "../ImportExport";
+import { Container} from "react-bootstrap";
+import { InfiniteCarousel} from "../ImportExport";
 import React, { useState } from "react";
 import ReactBnbGallery from "react-bnb-gallery";
 import "react-bnb-gallery/dist/style.css";
 import Modal from "./Modal";
+import ProjectsCard from "./ProjectsCard";
 
 const PHOTOS = [
   {
@@ -66,27 +66,18 @@ const PHOTOS = [
 
 const Projects = () => {
   const [isOpen, setIsOpen] = useState(false); //For ReactBnbGallery
-  const options = {
-    max: 20,
-    reverse: true,
-    perspective: 1000,
-    scale: { x: 1, y: 1, z: 1 },
-    rotate: 0,
-    translate: { x: 0, y: 0 },
-  };
-
   const [openModal, setopenModal] = useState(0);
-  const OnModalOpen=(modalNumber)=>{
+  const OnModalOpen = (modalNumber) => {
     setopenModal(modalNumber);
     document.body.style.overflow = "hidden";
-    document.body.querySelector("footer").style.opacity="0";
-    document.body.querySelector(".navbar").style.visibility="hidden";
+    document.body.querySelector("footer").style.opacity = "0";
+    document.body.querySelector(".navbar").style.visibility = "hidden";
   }
-  const OnModalClose=()=>{
+  const OnModalClose = () => {
     setopenModal(0);
     document.body.style.overflow = 'unset';
-    document.body.querySelector("footer").style.opacity="100";
-    document.body.querySelector(".navbar").style.visibility="visible";
+    document.body.querySelector("footer").style.opacity = "100";
+    document.body.querySelector(".navbar").style.visibility = "visible";
   }
 
   return (
@@ -134,250 +125,35 @@ const Projects = () => {
           dragging={true}
           scrollOnDevice={false}
           autoCycle={false}
-          //cycleInterval={10}
+        //cycleInterval={10}
         >
-          <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                    <Card.Img
-                      variant="top"
-                      src={require("../assets/img/BTChattingLogo.webp").default}
-                    />
-                    <Card.Body>
-                      <Card.Text>
-                        Anonymous Online Chat App, Multiple Users And Rooms
-                      </Card.Text>
-                      <Button
-                        style={{ fontFamily: "inherit" }}
-                        href="https://btchatting.herokuapp.com/"
-                        variant="dark"
-                      >
-                        <h3>BTChatting</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
 
-          <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                    <Card.Img
-                      variant="top"
-                      src={require("../assets/img/BTGallery.webp").default}
-                    />
-                    <Card.Body>
-                      <Card.Text>
-                        A Gallery Of Created 3D/2D Designs And Photos Gallery
-                      </Card.Text>
-                      <Button
-                        onClick={() => setIsOpen(true)}
-                        style={{ fontFamily: "inherit" }}
-                        variant="dark"
-                      >
-                        <h3>Design Gallery</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
+          <ProjectsCard href={"https://btchatting.herokuapp.com/"} src={require("../assets/img/BTChattingLogo.webp").default}
+            text={"Anonymous Online Chat App, Multiple Users And Rooms"} title={"BTChatting"} />
 
-          {/* Work in progress */}
-          <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                  <Card.Img
-                      variant="top"
-                      src={require("../assets/img/TCorpEms.webp").default}
-                    />
-                     <Card.Body>
-                      <Card.Text>
-                        Employee management system UX/UI Design using Figma
-                      </Card.Text>
-                      <Button
-                        onClick={() => {
-                         OnModalOpen(1);
-                        }}
-                        style={{ fontFamily: "inherit" }}
-                        variant="dark"
-                      >
-                        <h3>TCorp.EMS</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
-          <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                  <Card.Img
-                      variant="top"
-                      src={require("../assets/img/Connect4.webp").default}
-                    />
-                     <Card.Body>
-                      <Card.Text>
-                        Connect 4 Electronic Game - Computer Engineering Project
-                      </Card.Text>
-                      <Button
-                        onClick={() => {
-                          OnModalOpen(2);
-                        }}
-                        style={{ fontFamily: "inherit" }}
-                        variant="dark"
-                      >
-                        <h3>Connect 4</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
-           <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                    <Card.Img
-                      variant="top"
-                      src={require("../assets/img/BTAnimeLogo.webp").default}
-                    />
-                    <Card.Body>
-                      <Card.Text>
-                        Download And Watch English Anime Subbed or Dubbed
-                      </Card.Text>
-                      <Button
-                        style={{ fontFamily: "inherit" }}
-                        href="/#/btanime"
-                        variant="dark"
-                      >
-                        <h3>BTAnime</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
-          <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                    <Card.Img
-                      variant="top"
-                      src={require("../assets/img/trellotodo.webp").default}
-                    />
-                    <Card.Body>
-                      <Card.Text>
-                        A fullstack application for custom communication with trello
-                      </Card.Text>
-                      <Button
-                        style={{ fontFamily: "inherit" }}
-                        href="https://btawaifi.github.io/trello-todo-app/"
-                        variant="dark"
-                      >
-                        <h3>Trello Todo List</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
-          <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                    <Card.Img
-                      variant="top"
-                      src={require("../assets/img/lepont.webp").default}
-                    />
-                    <Card.Body>
-                      <Card.Text>
-                        A redesigned wordpress website for Le Pont Organization
-                      </Card.Text>
-                      <Button
-                        style={{ fontFamily: "inherit" }}
-                        href="https://festival-aleppo.org"
-                        variant="dark"
-                      >
-                        <h3>Le Pont Organization</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
-          <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                    <Card.Img
-                      variant="top"
-                      src={require("../assets/img/thelasttemptation.webp").default}
-                    />
-                    <Card.Body>
-                      <Card.Text>
-                        A short movie i edited about old Aleppo production By Issa Touma
-                      </Card.Text>
-                      <Button
-                        style={{ fontFamily: "inherit" }}
-                        href="https://www.youtube.com/watch?v=xc7HufHJC10&t=7s"
-                        variant="dark"
-                      >
-                        <h3>The Last Temptation</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
-          <div>
-            <Fade>
-              <MagicHover options={options}>
-                <Card className="project-card">
-                  <Card border="dark">
-                    <Card.Img
-                      variant="top"
-                      src={require("../assets/img/PetrossonLogo.webp").default}
-                    />
-                    <Card.Body>
-                      <Card.Text>
-                        A Home Installation Company Located In Stockholm |
-                        Sweden
-                      </Card.Text>
-                      <Button
-                        style={{ fontFamily: "inherit" }}
-                        href="https://petrossonbygg.github.io/"
-                        variant="dark"
-                      >
-                        <h3>PetrossonBYGG</h3>
-                      </Button>
-                    </Card.Body>
-                  </Card>
-                </Card>
-              </MagicHover>
-            </Fade>
-          </div>
+          <ProjectsCard href={"/#/btanime"} src={require("../assets/img/BTAnimeLogo.webp").default}
+            text={"Download And Watch English Anime Subbed or Dubbed"} title={"BTAnime"} />
+
+          <ProjectsCard href={"https://btawaifi.github.io/trello-todo-app/"} src={require("../assets/img/trellotodo.webp").default}
+            text={"A fullstack application for custom communication with trello"} title={"Trello Todo List"} />
+
+          <ProjectsCard href={"https://festival-aleppo.org"} src={require("../assets/img/lepont.webp").default}
+            text={"A redesigned wordpress website for Le Pont Organization"} title={"Le Pont Organization"} />
+
+          <ProjectsCard href={"https://www.youtube.com/watch?v=xc7HufHJC10&t=7s"} src={require("../assets/img/thelasttemptation.webp").default}
+            text={"A short movie i edited about old Aleppo production By Issa Touma"} title={"The Last Temptation"} />
+
+          <ProjectsCard href={"https://petrossonbygg.github.io/"} src={require("../assets/img/PetrossonLogo.webp").default}
+            text={" A Home Installation Company Located In Stockholm | Sweden"} title={"PetrossonBYGG"} />
+
+          <ProjectsCard func={() => setIsOpen(true)} src={require("../assets/img/BTGallery.webp").default}
+            text={"A Gallery Of Created 3D/2D Designs And Photos Gallery"} title={"Design Gallery"} />
+
+          <ProjectsCard func={() => { OnModalOpen(1) }} src={require("../assets/img/TCorpEms.webp").default}
+            text={"Employee management system UX/UI Design using Figma"} title={"TCorp.EMS"} />
+
+          <ProjectsCard func={() => { OnModalOpen(2) }} src={require("../assets/img/Connect4.webp").default}
+            text={"Connect 4 Electronic Game - Computer Engineering Project"} title={"Connect 4"} />
         </InfiniteCarousel>
       </div>
       <>
@@ -389,10 +165,10 @@ const Projects = () => {
           backgroundColor="#282828"
         />
       </>
-      {openModal===1 && (
+      {openModal === 1 && (
         <Modal openModal={openModal} setopenModal={setopenModal} OnModalClose={OnModalClose}>
           <iframe
-          title="TCorp.Ems"
+            title="TCorp.Ems"
             src="https://drive.google.com/file/d/1K-k3gOtcFkoT4h3fBcaILU17NRF2uOcY/preview"
             width="640"
             height="480"
@@ -401,7 +177,7 @@ const Projects = () => {
           ></iframe>
         </Modal>
       )}
-      {openModal===2 && (
+      {openModal === 2 && (
         <Modal openModal={openModal} setopenModal={setopenModal} OnModalClose={OnModalClose}>
           <iframe title="connect4" src="https://docs.google.com/presentation/d/e/2PACX-1vQv4wZtWALo0uGILweo8X_tTDX72SEyJQ_511VSY7nE5vGtuMY5munTtOnDgr2CHg/embed?start=false&loop=false&delayms=5000" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </Modal>

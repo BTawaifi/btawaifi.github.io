@@ -8,14 +8,11 @@ const Modal = (props) => {
   }
 
   return (
-    <motion.div className="backdrop"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-    >
+    <motion.div className="backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} >
       {props.children}
-       <div className="CloseImg" onClick={handleClick}>
-         <img src={X} width="32" height="32" alt="X"/>
-         </div>
+      <div className="CloseImg" onClick={handleClick}>
+        <img src={X} width="32" height="32" alt="X" />
+      </div>
     </motion.div>
   )
 }
