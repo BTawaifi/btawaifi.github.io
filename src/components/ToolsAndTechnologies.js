@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Fade,ExpandableCard } from "../ImportExport";
+import { Fade, ExpandableCard } from "../ImportExport";
 
 const TechnologyListFE = [
   "HTML5",
@@ -8,10 +8,12 @@ const TechnologyListFE = [
   "JavaScript",
   "React.js",
   "SASS",
-  "jQuery",
   "Bootstrap",
   "Progressive Web Apps (PWA)",
   "Wordpress",
+  "Firebase",
+  "React Native",
+  "Angular"
 ];
 const TechnologyListBE = [
   "Node.js",
@@ -20,18 +22,21 @@ const TechnologyListBE = [
   "Strapi",
   "Sanity.io",
   "Socket.IO ",
-  "Firebase",
   "MySQL",
+  "TypeORM",
+  "Docker",
+  "Jest",
+  "Puppeteer",
+  "TypeScript",
+  "Git",
+  "Redis"
 ];
 const TechnologyList2D = [
   "Photoshop",
-  "Lightroom",
   "Illustrator",
   "Corel Draw",
   "XD",
-  "Figma",
-  "Captivate",
-  "ToonBoom Harmony",
+  "Figma"
 ];
 const TechnologyList3D = [
   "Maya",
@@ -73,18 +78,15 @@ const ToolsAndTechnologies = () => {
         >
           Tools & Technologies
         </h2>
-        </Container>
-      <Container fluid  className="technologies-cards">
+      </Container>
+      <Container fluid className="technologies-cards">
         <Fade>
-        <ExpandableCard Title="Front-End" TechnologyList={TechnologyListFE} />
-        <ExpandableCard Title="Back-End" TechnologyList={TechnologyListBE} />
-        <ExpandableCard Title="2D Design" TechnologyList={TechnologyList2D} />
-        <ExpandableCard Title="3D Design" TechnologyList={TechnologyList3D} />
-        <ExpandableCard
-          Title="Video Production"
-          TechnologyList={TechnologyListVP}
-        />
-        <ExpandableCard Title="Other" TechnologyList={TechnologyListOT} />
+          <ExpandableCard Title="Front-End" TechnologyList={TechnologyListFE} />
+          <ExpandableCard Title="Back-End" TechnologyList={TechnologyListBE} />
+          <ExpandableCard Title="2D Design" TechnologyList={TechnologyList2D} />
+          <ExpandableCard Title="3D Design" TechnologyList={TechnologyList3D} />
+          <ExpandableCard Title="Video Production" TechnologyList={TechnologyListVP} />
+          <ExpandableCard Title="Other" TechnologyList={TechnologyListOT} />
         </Fade>
       </Container>
     </div>
