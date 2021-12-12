@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Fade, ExpandableCard } from "../ImportExport";
+import "../assets/css/technologies.css";
 
 const TechnologyListFE = [
   "HTML5",

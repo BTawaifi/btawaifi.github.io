@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import X from "../assets/img/x-512.png";
 
 const Modal = (props) => {
   const handleClick = () => {
@@ -11,7 +10,7 @@ const Modal = (props) => {
     <motion.div className="backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} >
       {props.children}
       <div className="CloseImg" onClick={handleClick}>
-        <img src={X} width="32" height="32" alt="X" />
+      <svg viewBox="0 0 24 24" role="img" focusable="false" style={{height: '1em', width: '1em', display: 'block', fill: 'white'}}><path d="m23.25 24c-.19 0-.38-.07-.53-.22l-10.72-10.72-10.72 10.72c-.29.29-.77.29-1.06 0s-.29-.77 0-1.06l10.72-10.72-10.72-10.72c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l10.72 10.72 10.72-10.72c.29-.29.77-.29 1.06 0s .29.77 0 1.06l-10.72 10.72 10.72 10.72c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22" fill-rule="evenodd"></path></svg>
       </div>
     </motion.div>
   )

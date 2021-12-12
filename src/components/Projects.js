@@ -5,6 +5,7 @@ import ReactBnbGallery from "react-bnb-gallery";
 import "react-bnb-gallery/dist/style.css";
 import Modal from "./Modal";
 import ProjectsCard from "./ProjectsCard";
+import "../assets/css/projects.css";
 
 const PHOTOS = [
   {

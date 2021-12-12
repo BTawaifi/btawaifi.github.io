@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Row, Col, Nav, Card, Image } from "react-bootstrap";
 import Avatar from "../assets/img/BT.webp";
 import MagicHover from "magic-hover";
+import "../assets/css/about.css";
 
 const About = () => {
   const options = {
@@ -59,9 +60,9 @@ const About = () => {
                     &nbsp;At Aleppo State University*/}
                   </h3>
                 </Card.Body>
-              </Col>
+              </Col> 
               <Col className="about-image" xs={0} md={2} lg={2}>
-                <Image src={Avatar} roundedCircle />
+                <Image src={Avatar} alt={"Boutros Tawaifi Image"} roundedCircle />
               </Col>
             </Row>
           </Card>

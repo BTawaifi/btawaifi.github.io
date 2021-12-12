@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Figure } from "react-bootstrap";
 import { InfiniteCarousel } from "../ImportExport";
+import "../assets/css/skills.css";
 
 const Skills = () => {
 

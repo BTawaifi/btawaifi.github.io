@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Button, ButtonGroup, FormControl, InputGroup } from "react-bootstrap";
 import axios from "axios";
+import "../assets/css/anime.css";
 
 let itemsArray = [];
 
@@ -19,7 +20,7 @@ const Anime = () => {
     if (maxEpisode === undefined) {
       initializeLoader();
     }
-    return () => {};
+    return () => { };
   }, []);
 
   const handleInputChange = (e) => {
@@ -69,7 +70,7 @@ const Anime = () => {
     useanimeName(selMain);
     ref_foundStatus.current.innerText = "Done";
     /////
-    let mhref = "https://gogoanime.vc/";
+    let mhref = "https://gogoanime.wiki/";
     mhref = mhref.concat(href);
     useanimeUrl(mhref);
     mhref = mhref.concat(`-episode-1`);
@@ -116,7 +117,7 @@ const Anime = () => {
     } catch (error) {
       console.log(error);
     }
-    let UrlF = "https://gogoanime.vc/search.html?keyword=";
+    let UrlF = "https://gogoanime.wiki/search.html?keyword=";
     UrlF = UrlF.concat(`${findTxt}`);
     //Get response from URL
     pingFindList(UrlF);
@@ -173,7 +174,7 @@ const Anime = () => {
 
         //Modify img
         document.getElementById("animePic").src =
-        itemsArray[0].children[0].firstElementChild.firstElementChild.src;
+          itemsArray[0].children[0].firstElementChild.firstElementChild.src;
       })
 
       .catch(() => {
@@ -242,7 +243,7 @@ const Anime = () => {
     let errr = document.querySelector("#webs");
 
     axios
-    //.get(`https://corsgogo.herokuapp.com/${link}`)
+      //.get(`https://corsgogo.herokuapp.com/${link}`)
       .get(`${link}`)
       .then((html) => {
         errr.style.color = "white";
@@ -258,84 +259,6 @@ const Anime = () => {
         ref_btnStat.current.innerText = "Url Or Connection Error Retry";
       });
   }
-
-  // function processResponse(link) {
-  //   let BtnStatus = ref_btnStat.current;
-  //   const resolution = ref_resolution.current.value;
-  //   BtnStatus.innerText = "Processing Download";
-  //   if (resolution !== 0) {
-  //     axios
-  //     //.get(`https://corsgogo.herokuapp.com/${link}`)
-  //       .get(`${link}`)
-  //       .then((html) => {
-  //         var parser = new DOMParser();
-  //         var doc = parser.parseFromString(html.data, "text/html");
-  //         //Choosing Resolution from scraped webpage
-  //         let Url3 = "";
-
-  //         if(resolution===2){
-  //           console.log(Url3)
-  //           Url3 = doc.body.querySelector(".dowloads").children[0].href;
-  //         }
-  //         /*
-  //         if (resolution == 1) {
-  //           Url3 = doc.body
-  //             .querySelector(".content")
-  //             .querySelector(".content_c")
-  //             .querySelector(".content_c_bg").children[4].children[3]
-  //             .children[0].href;
-  //         } else if (resolution == 2) {
-  //           Url3 = doc.body
-  //             .querySelector(".content")
-  //             .querySelector(".content_c")
-  //             .querySelector(".content_c_bg").children[6].children[1]
-  //             .children[0].href;
-  //           // document.querySelector('.iframe').src = Url3;
-  //           window.open(Url3, "_blank");
-  //         } else if (resolution == 3) {
-  //           Url3 = doc.body
-  //             .querySelector(".content")
-  //             .querySelector(".content_c")
-  //             .querySelector(".content_c_bg").children[4].children[4]
-  //             .children[0].href;
-  //         } else if (resolution == 4) {
-  //           Url3 = doc.body
-  //             .querySelector(".content")
-  //             .querySelector(".content_c")
-  //             .querySelector(".content_c_bg").children[4].children[5]
-  //             .children[0].href;
-  //         } else if (resolution == 5) {
-  //           Url3 = doc.body
-  //             .querySelector(".content")
-  //             .querySelector(".content_c")
-  //             .querySelector(".content_c_bg").children[4].children[2]
-  //             .children[0].href;
-  //         }
-
-  //         */
-  //         BtnStatus.innerText = "Done";
-  //         BtnStatus.style.color = "green";
-  //         window.open(Url3, '_blank');
-  //         /*if (resolution != 2) {
-  //           downloadFile(Url3);
-  //         }*/
-  //       })
-  //       .catch(() => {
-  //         BtnStatus.style.color = "red";
-  //         ref_btnStat.current.innerText =
-  //           "Error Retry/Change Resolution Number/Choose External Link";
-  //       });
-  //   }
-  // }
-
-  // function downloadFile(filePath) {
-  //   var link = document.createElement("a");
-  //   link.href = filePath;
-  //   link.download = filePath.substr(filePath.lastIndexOf("/") + 1);
-  //   link.click();
-  // }
-
-  /////////////////////////
   return (
     <div className="anime-container">
       <header id="anime-section-title">
@@ -358,11 +281,9 @@ const Anime = () => {
                   aria-label="Anime Name"
                   aria-describedby="basic-addon2"
                 />
-                <InputGroup.Append>
                   <Button onClick={Find} id="FBtn" variant="outline-light">
                     Find
                   </Button>
-                </InputGroup.Append>
               </InputGroup>
 
               <select
@@ -378,7 +299,7 @@ const Anime = () => {
                 Load Into Downloader
               </Button>
               <div id="foundlistlbl" ref={ref_foundStatus}>
-                 
+
               </div>
             </div>
             <img
@@ -439,7 +360,7 @@ const Anime = () => {
                 ref={ref_resolution}
               >
                 <option value="2">External Link</option>
-               {/* <option value="1">First Internal</option>
+                {/* <option value="1">First Internal</option>
                 <option value="3">Second Internal</option>
                 <option value="4">Third Internal</option>
                 <option value="5">Extra(LOW) Internal</option>*/}
@@ -469,7 +390,6 @@ const Anime = () => {
                 </ButtonGroup>
               </div>
               <div id="btnStat" ref={ref_btnStat}>
-                 
               </div>
             </div>
           </section>

@@ -13,6 +13,7 @@ import {
   faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import ContactIcon from "./ContactIcon";
+import "../assets/css/contacts.css";
 
 const ContactFooter = () => {
   return (

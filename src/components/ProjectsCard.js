@@ -22,6 +22,7 @@ const ProjectsCard = (props) => {
                         <Card border="dark">
                             <Card.Img
                                 variant="top"
+                                alt={props.title}
                                 src={props.src}
                             />
                             <Card.Body>

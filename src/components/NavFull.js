@@ -1,8 +1,9 @@
 import React, { useEffect,useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-
 import Logo from "../assets/img/Logo.png";
 import Logolgt from "../assets/img/Logo-lgt.png";
+import "../assets/css/nav.css";
+
 export const NavFull = (props) => {
 
   const [logoText] = useState(props.logoText);
