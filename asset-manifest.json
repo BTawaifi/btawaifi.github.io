@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.6ca13b06.css",
-    "main.js": "./static/js/main.f969729b.js",
-    "static/js/905.0aebee96.chunk.js": "./static/js/905.0aebee96.chunk.js",
-    "static/js/21.dfd93467.chunk.js": "./static/js/21.dfd93467.chunk.js",
-    "static/js/157.a19490f2.chunk.js": "./static/js/157.a19490f2.chunk.js",
-    "static/css/882.69ae68c3.chunk.css": "./static/css/882.69ae68c3.chunk.css",
-    "static/js/882.170d2d29.chunk.js": "./static/js/882.170d2d29.chunk.js",
+    "main.css": "./static/css/main.54ecfd6f.css",
+    "main.js": "./static/js/main.03a2ba2f.js",
+    "static/js/905.dfd6ea0d.chunk.js": "./static/js/905.dfd6ea0d.chunk.js",
+    "static/js/21.4304b571.chunk.js": "./static/js/21.4304b571.chunk.js",
+    "static/js/739.1c26a7ae.chunk.js": "./static/js/739.1c26a7ae.chunk.js",
+    "static/css/882.336308d0.chunk.css": "./static/css/882.336308d0.chunk.css",
+    "static/js/882.1147bd3a.chunk.js": "./static/js/882.1147bd3a.chunk.js",
     "static/media/MoveThroughSpaceSlant.webp": "./static/media/MoveThroughSpaceSlant.48fe854b934a4dfe00dc.webp",
     "static/media/T5.webp": "./static/media/T5.6d327a667054ac3a574f.webp",
     "static/media/Medeval.webp": "./static/media/Medeval.1ab939ffb3f1063d4200.webp",
-    "static/media/Resume-Boutros-Tawaifi.pdf": "./static/media/Resume-Boutros-Tawaifi.ebfeca8d501cafce8298.pdf",
+    "static/media/Resume-Boutros-Tawaifi.pdf": "./static/media/Resume-Boutros-Tawaifi.da0640c4ddf643510a9d.pdf",
     "static/media/LED.webp": "./static/media/LED.f82a6db1b0b28f0a4953.webp",
     "static/media/iphone_Shot.webp": "./static/media/iphone_Shot.1d4cbb66b01aaabb13f1.webp",
     "static/media/LOG.webp": "./static/media/LOG.4d3e33f4864ef3ef2679.webp",
@@ -24,7 +24,6 @@
     "static/media/TCorpEms.webp": "./static/media/TCorpEms.3376916336d444fe11ae.webp",
     "static/media/Connect4.webp": "./static/media/Connect4.db1e37d792796148f023.webp",
     "static/media/react-hexagon.webp": "./static/media/react-hexagon.a40a9594e1a2ab610cde.webp",
-    "static/media/jong-in-aleppo.webp": "./static/media/jong-in-aleppo.f8f88c5338fa986c2ca2.webp",
     "static/media/BTGallery.webp": "./static/media/BTGallery.fc97436541e64fd3bf2d.webp",
     "static/media/maya.webp": "./static/media/maya.b8600fe94243357c150f.webp",
     "static/media/BTAnimeLogo.webp": "./static/media/BTAnimeLogo.0e7ab2cd95010a349bd8.webp",
@@ -64,7 +63,7 @@
     "static/media/closeImg.svg": "./static/media/closeImg.248024562bf1e18b8e92abd73d86db8d.svg"
   },
   "entrypoints": [
-    "static/css/main.6ca13b06.css",
-    "static/js/main.f969729b.js"
+    "static/css/main.54ecfd6f.css",
+    "static/js/main.03a2ba2f.js"
   ]
 }
