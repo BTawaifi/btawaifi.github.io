@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.7f9eda20.css",
-    "main.js": "./static/js/main.346f94cd.js",
+    "main.js": "./static/js/main.3b233b57.js",
     "static/js/905.dfd6ea0d.chunk.js": "./static/js/905.dfd6ea0d.chunk.js",
     "static/js/21.4304b571.chunk.js": "./static/js/21.4304b571.chunk.js",
     "static/js/739.1c26a7ae.chunk.js": "./static/js/739.1c26a7ae.chunk.js",
     "static/css/882.0966b057.chunk.css": "./static/css/882.0966b057.chunk.css",
-    "static/js/882.6518ed66.chunk.js": "./static/js/882.6518ed66.chunk.js",
+    "static/js/882.125d30c6.chunk.js": "./static/js/882.125d30c6.chunk.js",
     "static/media/MoveThroughSpaceSlant.webp": "./static/media/MoveThroughSpaceSlant.48fe854b934a4dfe00dc.webp",
     "static/media/T5.webp": "./static/media/T5.6d327a667054ac3a574f.webp",
     "static/media/Medeval.webp": "./static/media/Medeval.1ab939ffb3f1063d4200.webp",
@@ -24,6 +24,7 @@
     "static/media/TCorpEms.webp": "./static/media/TCorpEms.3376916336d444fe11ae.webp",
     "static/media/Connect4.webp": "./static/media/Connect4.db1e37d792796148f023.webp",
     "static/media/react-hexagon.webp": "./static/media/react-hexagon.a40a9594e1a2ab610cde.webp",
+    "static/media/jong-in-aleppo.webp": "./static/media/jong-in-aleppo.f8f88c5338fa986c2ca2.webp",
     "static/media/BTGallery.webp": "./static/media/BTGallery.fc97436541e64fd3bf2d.webp",
     "static/media/maya.webp": "./static/media/maya.b8600fe94243357c150f.webp",
     "static/media/BTAnimeLogo.webp": "./static/media/BTAnimeLogo.0e7ab2cd95010a349bd8.webp",
@@ -64,6 +65,6 @@
   },
   "entrypoints": [
     "static/css/main.7f9eda20.css",
-    "static/js/main.346f94cd.js"
+    "static/js/main.3b233b57.js"
   ]
 }
