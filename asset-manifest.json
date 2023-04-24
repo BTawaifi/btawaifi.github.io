@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.54ecfd6f.css",
-    "main.js": "./static/js/main.d75352ad.js",
+    "main.css": "./static/css/main.7f9eda20.css",
+    "main.js": "./static/js/main.346f94cd.js",
     "static/js/905.dfd6ea0d.chunk.js": "./static/js/905.dfd6ea0d.chunk.js",
     "static/js/21.4304b571.chunk.js": "./static/js/21.4304b571.chunk.js",
     "static/js/739.1c26a7ae.chunk.js": "./static/js/739.1c26a7ae.chunk.js",
-    "static/css/882.336308d0.chunk.css": "./static/css/882.336308d0.chunk.css",
-    "static/js/882.aaae1285.chunk.js": "./static/js/882.aaae1285.chunk.js",
+    "static/css/882.0966b057.chunk.css": "./static/css/882.0966b057.chunk.css",
+    "static/js/882.6518ed66.chunk.js": "./static/js/882.6518ed66.chunk.js",
     "static/media/MoveThroughSpaceSlant.webp": "./static/media/MoveThroughSpaceSlant.48fe854b934a4dfe00dc.webp",
     "static/media/T5.webp": "./static/media/T5.6d327a667054ac3a574f.webp",
     "static/media/Medeval.webp": "./static/media/Medeval.1ab939ffb3f1063d4200.webp",
-    "static/media/Resume-Boutros-Tawaifi.pdf": "./static/media/Resume-Boutros-Tawaifi.0a8e6870cfd2dc084dac.pdf",
+    "static/media/Resume-Boutros-Tawaifi.pdf": "./static/media/Resume-Boutros-Tawaifi.a7a53a00f878c4648144.pdf",
     "static/media/LED.webp": "./static/media/LED.f82a6db1b0b28f0a4953.webp",
     "static/media/iphone_Shot.webp": "./static/media/iphone_Shot.1d4cbb66b01aaabb13f1.webp",
     "static/media/LOG.webp": "./static/media/LOG.4d3e33f4864ef3ef2679.webp",
@@ -63,7 +63,7 @@
     "static/media/closeImg.svg": "./static/media/closeImg.248024562bf1e18b8e92abd73d86db8d.svg"
   },
   "entrypoints": [
-    "static/css/main.54ecfd6f.css",
-    "static/js/main.d75352ad.js"
+    "static/css/main.7f9eda20.css",
+    "static/js/main.346f94cd.js"
   ]
 }
