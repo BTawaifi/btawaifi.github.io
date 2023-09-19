@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.7f9eda20.css",
-    "main.js": "./static/js/main.c57d778a.js",
+    "main.css": "./static/css/main.ff029bfd.css",
+    "main.js": "./static/js/main.79d31da6.js",
     "static/js/905.dfd6ea0d.chunk.js": "./static/js/905.dfd6ea0d.chunk.js",
     "static/js/21.4304b571.chunk.js": "./static/js/21.4304b571.chunk.js",
-    "static/js/739.1c26a7ae.chunk.js": "./static/js/739.1c26a7ae.chunk.js",
-    "static/css/882.aa6a29d0.chunk.css": "./static/css/882.aa6a29d0.chunk.css",
-    "static/js/882.f9d336d3.chunk.js": "./static/js/882.f9d336d3.chunk.js",
+    "static/js/823.22e2a9b7.chunk.js": "./static/js/823.22e2a9b7.chunk.js",
+    "static/css/882.53c4c1af.chunk.css": "./static/css/882.53c4c1af.chunk.css",
+    "static/js/882.fcae3394.chunk.js": "./static/js/882.fcae3394.chunk.js",
     "static/media/MoveThroughSpaceSlant.webp": "./static/media/MoveThroughSpaceSlant.48fe854b934a4dfe00dc.webp",
     "static/media/T5.webp": "./static/media/T5.6d327a667054ac3a574f.webp",
     "static/media/Medeval.webp": "./static/media/Medeval.1ab939ffb3f1063d4200.webp",
@@ -17,17 +17,18 @@
     "static/media/DRAGON.webp": "./static/media/DRAGON.ddb9266b88c1445a3b7d.webp",
     "static/media/T50_BKG.webp": "./static/media/T50_BKG.c8b5d3306cd24c363603.webp",
     "static/media/anime.webp": "./static/media/anime.33ac9df1f2665db6077e.webp",
-    "static/media/BT.webp": "./static/media/BT.7c0c0452dfd870854966.webp",
+    "static/media/BT.webp": "./static/media/BT.56b12e1475e865e41a1a.webp",
+    "static/media/silence_remover.webp": "./static/media/silence_remover.a8bc136a196559eb7118.webp",
+    "static/media/imgmod.webp": "./static/media/imgmod.13aff9b1ca1762339d87.webp",
+    "static/media/AI_IM_MOD.webp": "./static/media/AI_IM_MOD.8e5f4ec4078d4ab404e0.webp",
     "static/media/thelasttemptation.webp": "./static/media/thelasttemptation.26c6cc10bf2e766d2209.webp",
     "static/media/Prototype.ttf": "./static/media/Prototype.be9924a47c44090561d7.ttf",
-    "static/media/BTChattingLogo.webp": "./static/media/BTChattingLogo.c94e3b56b5b1098e9351.webp",
     "static/media/TCorpEms.webp": "./static/media/TCorpEms.3376916336d444fe11ae.webp",
     "static/media/Connect4.webp": "./static/media/Connect4.db1e37d792796148f023.webp",
     "static/media/react-hexagon.webp": "./static/media/react-hexagon.a40a9594e1a2ab610cde.webp",
     "static/media/jong-in-aleppo.webp": "./static/media/jong-in-aleppo.f8f88c5338fa986c2ca2.webp",
     "static/media/BTGallery.webp": "./static/media/BTGallery.fc97436541e64fd3bf2d.webp",
     "static/media/maya.webp": "./static/media/maya.b8600fe94243357c150f.webp",
-    "static/media/BTAnimeLogo.webp": "./static/media/BTAnimeLogo.0e7ab2cd95010a349bd8.webp",
     "static/media/mySQL.webp": "./static/media/mySQL.f29153d1409fd96d2677.webp",
     "static/media/csharp.webp": "./static/media/csharp.2984a71d9a5378ba53e9.webp",
     "static/media/cpp.webp": "./static/media/cpp.2964ea52316b0ac40cbd.webp",
@@ -64,7 +65,7 @@
     "static/media/closeImg.svg": "./static/media/closeImg.248024562bf1e18b8e92abd73d86db8d.svg"
   },
   "entrypoints": [
-    "static/css/main.7f9eda20.css",
-    "static/js/main.c57d778a.js"
+    "static/css/main.ff029bfd.css",
+    "static/js/main.79d31da6.js"
   ]
 }
