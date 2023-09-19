@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.ff029bfd.css",
-    "main.js": "./static/js/main.79d31da6.js",
+    "main.js": "./static/js/main.24785b90.js",
     "static/js/905.dfd6ea0d.chunk.js": "./static/js/905.dfd6ea0d.chunk.js",
     "static/js/21.4304b571.chunk.js": "./static/js/21.4304b571.chunk.js",
     "static/js/823.22e2a9b7.chunk.js": "./static/js/823.22e2a9b7.chunk.js",
     "static/css/882.53c4c1af.chunk.css": "./static/css/882.53c4c1af.chunk.css",
-    "static/js/882.fcae3394.chunk.js": "./static/js/882.fcae3394.chunk.js",
+    "static/js/882.972a6d01.chunk.js": "./static/js/882.972a6d01.chunk.js",
     "static/media/MoveThroughSpaceSlant.webp": "./static/media/MoveThroughSpaceSlant.48fe854b934a4dfe00dc.webp",
     "static/media/T5.webp": "./static/media/T5.6d327a667054ac3a574f.webp",
     "static/media/Medeval.webp": "./static/media/Medeval.1ab939ffb3f1063d4200.webp",
@@ -66,6 +66,6 @@
   },
   "entrypoints": [
     "static/css/main.ff029bfd.css",
-    "static/js/main.79d31da6.js"
+    "static/js/main.24785b90.js"
   ]
 }
